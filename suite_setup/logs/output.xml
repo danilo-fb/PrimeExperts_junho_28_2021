@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.9.6 on win32)" generated="20210630 21:33:59.467" rpa="false" schemaversion="2">
+<suite id="s1" name="Suite Setup" source="C:\Projetos\PrimeExperts_junho_28_2021\suite_setup">
+<suite id="s1-s1" name="Suite Setup" source="C:\Projetos\PrimeExperts_junho_28_2021\suite_setup\suite_setup.robot">
+<kw name="kw para executar no setup da Suite" type="SETUP">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Essa KW foi executada no Setup da Suite</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210630 21:33:59.558" endtime="20210630 21:33:59.559"/>
+</kw>
+<status status="PASS" starttime="20210630 21:33:59.558" endtime="20210630 21:33:59.559"/>
+</kw>
+<test id="s1-s1-t1" name="Meu teste de soma">
+<kw name="kw para executar no setup de cada Teste" type="SETUP">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Essa KW foi executada no setup de cada Teste</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210630 21:33:59.562" endtime="20210630 21:33:59.562"/>
+</kw>
+<status status="PASS" starttime="20210630 21:33:59.561" endtime="20210630 21:33:59.563"/>
+</kw>
+<kw name="somar dois numeros">
+<var>${resultado_da_soma}</var>
+<arg>1</arg>
+<arg>2</arg>
+<kw name="Evaluate" library="BuiltIn">
+<var>${resultado_da_expressao}</var>
+<arg>${primeiro_num}+${segundo_num}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20210630 21:33:59.567" level="INFO">${resultado_da_expressao} = 3</msg>
+<status status="PASS" starttime="20210630 21:33:59.564" endtime="20210630 21:33:59.567"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}O resultado é: ${resultado_da_expressao}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210630 21:33:59.567" endtime="20210630 21:33:59.569"/>
+</kw>
+<msg timestamp="20210630 21:33:59.570" level="INFO">${resultado_da_soma} = 3</msg>
+<status status="PASS" starttime="20210630 21:33:59.563" endtime="20210630 21:33:59.570"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${resultado_da_soma}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210630 21:33:59.572" level="INFO">3</msg>
+<status status="PASS" starttime="20210630 21:33:59.571" endtime="20210630 21:33:59.572"/>
+</kw>
+<kw name="somar dois numeros">
+<var>${resultado_da_soma}</var>
+<arg>${resultado_da_soma}</arg>
+<arg>4</arg>
+<kw name="Evaluate" library="BuiltIn">
+<var>${resultado_da_expressao}</var>
+<arg>${primeiro_num}+${segundo_num}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20210630 21:33:59.575" level="INFO">${resultado_da_expressao} = 7</msg>
+<status status="PASS" starttime="20210630 21:33:59.574" endtime="20210630 21:33:59.575"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}O resultado é: ${resultado_da_expressao}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210630 21:33:59.575" endtime="20210630 21:33:59.578"/>
+</kw>
+<msg timestamp="20210630 21:33:59.579" level="INFO">${resultado_da_soma} = 7</msg>
+<status status="PASS" starttime="20210630 21:33:59.573" endtime="20210630 21:33:59.579"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${resultado_da_soma}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210630 21:33:59.580" level="INFO">7</msg>
+<status status="PASS" starttime="20210630 21:33:59.580" endtime="20210630 21:33:59.580"/>
+</kw>
+<kw name="kw para executar no Teardown de cada Teste" type="TEARDOWN">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Essa KW foi executada no Teardown deste Teste!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210630 21:33:59.583" endtime="20210630 21:33:59.584"/>
+</kw>
+<status status="PASS" starttime="20210630 21:33:59.581" endtime="20210630 21:33:59.585"/>
+</kw>
+<status status="PASS" starttime="20210630 21:33:59.560" endtime="20210630 21:33:59.586"/>
+</test>
+<test id="s1-s1-t2" name="Meu teste de soma 2">
+<kw name="kw para executar no setup de cada Teste" type="SETUP">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Essa KW foi executada no setup de cada Teste</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210630 21:33:59.590" endtime="20210630 21:33:59.591"/>
+</kw>
+<status status="PASS" starttime="20210630 21:33:59.590" endtime="20210630 21:33:59.592"/>
+</kw>
+<kw name="somar dois numeros">
+<arg>3</arg>
+<arg>4</arg>
+<kw name="Evaluate" library="BuiltIn">
+<var>${resultado_da_expressao}</var>
+<arg>${primeiro_num}+${segundo_num}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20210630 21:33:59.597" level="INFO">${resultado_da_expressao} = 7</msg>
+<status status="PASS" starttime="20210630 21:33:59.595" endtime="20210630 21:33:59.597"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}O resultado é: ${resultado_da_expressao}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210630 21:33:59.597" endtime="20210630 21:33:59.600"/>
+</kw>
+<status status="PASS" starttime="20210630 21:33:59.593" endtime="20210630 21:33:59.601"/>
+</kw>
+<kw name="kw para executar no Teardown de cada Teste" type="TEARDOWN">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Essa KW foi executada no Teardown deste Teste!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210630 21:33:59.603" endtime="20210630 21:33:59.604"/>
+</kw>
+<status status="PASS" starttime="20210630 21:33:59.602" endtime="20210630 21:33:59.604"/>
+</kw>
+<status status="PASS" starttime="20210630 21:33:59.588" endtime="20210630 21:33:59.605"/>
+</test>
+<kw name="kw para executar no Teardown da Suite" type="TEARDOWN">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Essa KW foi executada no Teardown desta Suite!!!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210630 21:33:59.611" endtime="20210630 21:33:59.612"/>
+</kw>
+<status status="PASS" starttime="20210630 21:33:59.611" endtime="20210630 21:33:59.613"/>
+</kw>
+<doc>testando argumentos e retornos</doc>
+<status status="PASS" starttime="20210630 21:33:59.518" endtime="20210630 21:33:59.613"/>
+</suite>
+<status status="PASS" starttime="20210630 21:33:59.471" endtime="20210630 21:33:59.620"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Suite Setup">Suite Setup</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Suite Setup">Suite Setup.Suite Setup</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
